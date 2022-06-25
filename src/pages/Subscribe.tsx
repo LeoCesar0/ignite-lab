@@ -1,0 +1,33 @@
+import Logo from "../components/Logo";
+
+const Subscribe = () => {
+  return (<>
+    <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
+
+      <div className="max-w-[1100px] w-full flex items-center justify-between  mt-20 mx-auto "> 
+        <div className="max-w-[640px] flex flex-col" >
+          <Logo />
+          <h1 className="text-[40px] leading-tight text-white mt-8" >Construa uma <strong className="text-blue-500" >aplicação completa</strong>, <br /> do zero, com <strong className="text-blue-500">React JS</strong></h1>
+          <p className="text-sm text-gray-200 mt-6 leading-relaxed" >Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.</p>
+        </div>
+        <div className="bg-gray-700 border border-gray-500 rounded p-8" >
+          <strong className="text-2xl mb-6 block" >Inscreva-se gratuitamente</strong>
+
+          <form className="flex flex-col gap-2 w-full">
+            <input type="text" placeholder="Nome completo"
+              className="bg-gray-900 rounded px-5 h-14"
+            />
+            <input type="email" placeholder="Seu melhor e-mail" 
+              className="bg-gray-900 rounded px-5 h-14"
+            />
+            <button type="submit" className="uppercase mt-4 bg-green-500 py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors" >Inscrever</button>
+          </form>
+        </div>
+      </div>
+      <img src="/src/assets/subscribe/image.png" className="mt-18" alt="code-mockup" />
+    </div>
+  </>)
+};
+
+export default Subscribe;
+//
