@@ -14,7 +14,7 @@ const Video: React.FC<{ slug: string }> = ({ slug }) => {
     variables: {
       slug: slug,
     },
-    fetchPolicy: "no-cache",
+    // fetchPolicy: "no-cache",
   });
 
   if (!data || !data.lesson) {
@@ -31,7 +31,7 @@ const Video: React.FC<{ slug: string }> = ({ slug }) => {
     <section className="flex-1">
       <div className="bg-black grid place-items-center">
         <div className="w-full h-full aspect-video max-w-[1100px] max-h-[60vh]">
-          <Player>
+          <Player key={lesson.videoId} >
             <Youtube videoId={lesson.videoId || ""} />
             <DefaultUi />
           </Player>
