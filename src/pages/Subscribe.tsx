@@ -91,7 +91,7 @@ const Subscribe = () => {
           </div>
         </div>
         <img
-          src="/src/assets/subscribe/image.png"
+          src="./src/assets/subscribe/image.png"
           className="mt-18"
           alt="code-mockup"
         />
